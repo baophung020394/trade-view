@@ -1,0 +1,19 @@
+.wrap-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @include xsmall {
+        max-width: 576px;
+    }
+    @include small {
+        max-width: 720px;
+    }
+    @include large {
+        max-width: 960px;
+    }
+    @include large {
+        max-width: 1180px;
+    }
+}

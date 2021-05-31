@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    .tv-header__link--logo {
+        font-size: 14px;
+        cursor: pointer;
+        color: $color-black;
+        .tv-header__logo-text {
+            margin-left: 10px;
+        }
+        .tv-header__icon {
+            vertical-align: sub;
+        }
+    }
+    .authenticate {
+        .sign-in {
+            color: $color-blue;
+            transition: color 0.35s ease;
+            font-size: 16px;
+            white-space: nowrap;
+        }
+        .start-free-trial {
+            margin-left: 15px;
+            display: inline-block;
+            height: 34px;
+            line-height: 34px;
+            padding: 0 24px;
+            font-size: 16px;
+            color: $color-white;
+            border-radius: 4px;
+            vertical-align: middle;
+            background-color: $color-blue;
+            transition: background-color 0.35s ease;
+        }
+    }
+    .sign-in,
+    .tv-header__logo-text,
+    .tv-header__icon {
+        cursor: pointer;
+        height: 54px;
+        line-height: 54px;
+    }
+}

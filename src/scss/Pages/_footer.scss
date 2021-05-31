@@ -1,0 +1,22 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+    @include large {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .footer-col {
+        a {
+            margin: 0 -5px;
+            padding: 4px 5px;
+            display: block;
+            clear: left;
+            color: $color-black;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 21px;
+            transition: color .35s ease;
+        }
+    }
+}

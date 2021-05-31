@@ -1,0 +1,48 @@
+.ant-tabs-content-holder {
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid #e0e3eb;
+}
+.markets-child {
+    h1 {
+        margin: 40px 0 5px;
+        color: #131722;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: 700;
+    }
+    .ant-table-thead {
+        & > tr {
+            & > th {
+                background: transparent;
+                border: none;
+                font-weight: 400;
+                letter-spacing: 0.2px;
+                color: #787b86;
+                font-size: 12px;
+                &:before {
+                    content: none !important;
+                }
+            }
+        }
+    }
+    .ant-table-tbody {
+        & > tr {
+            & > td {
+                color: #131722;
+                transition: color 0.35s ease;
+                font-size: 16px;
+                &:nth-child(3) {
+                    color: #787b86;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    .ant-col {
+        margin-bottom: 60px;
+        padding: 0 15px;
+    }
+}

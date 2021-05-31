@@ -1,0 +1,129 @@
+.category {
+    .category-prices {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+        .main-price {
+            .number {
+                display: inline-block;
+                font-size: 36px;
+                line-height: 1;
+                height: 34px;
+                font-weight: 700;
+                color: $color-black;
+            }
+            .currencies {
+                display: inline-block;
+                position: relative;
+                height: 100%;
+                margin-left: 2px;
+                color: $color-black;
+            }
+            .change {
+                color: $color-green;
+                margin-left: 15px;
+                span {
+                    font-size: 18px;
+                }
+            }
+            .bottom {
+                .open {
+                    color: $color-green2;
+                    font-size: 11px;
+                    line-height: 1;
+                    letter-spacing: 0.4px;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    margin-right: 7px;
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        position: relative;
+                        width: 4px;
+                        height: 4px;
+                        margin-right: 4px;
+                        margin-bottom: 2px;
+                        border-radius: 50%;
+                        background: currentColor;
+                    }
+                }
+                .date {
+                    font-size: 11px;
+                    line-height: 1;
+                    letter-spacing: 0.4px;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    color: $color-gray;
+                }
+            }
+        }
+        .sub-prices {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            .item-subs {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .top {
+                    .number {
+                        font-size: 18px;
+                        height: 28px;
+                        color: $color-black;
+                        white-space: nowrap;
+                    }
+                }
+                .bottom {
+                    span {
+                        font-size: 11px;
+                        line-height: 1;
+                        color: $color-gray;
+                        letter-spacing: 0.4px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+    .category-header {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        @include medium {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .right {
+            .trade-now,
+            .follow {
+                margin-right: 15px;
+                min-width: 160px;
+                text-align: center;
+                font-weight: 500;
+                display: inline-block;
+                color: #2196f3;
+                background-color: transparent;
+                padding: 0 29px;
+                border-color: #2196f3;
+                font-size: 17px;
+                height: 46px;
+                line-height: 46px;
+                border: 1px solid #2196f3;
+                border-radius: 4px;
+                cursor: pointer;
+                box-sizing: border-box;
+                -webkit-tap-highlight-color: transparent;
+                transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease;
+            }
+            .follow {
+                &:hover {
+                    color: #fff;
+                    background-color: #1e88e5;
+                }
+            }
+            .trade-now {
+                color: #fff;
+                border-color: #2196f3;
+                background-color: #2196f3;
+                min-width: 40px;
+            }
+        }
+    }
+}
